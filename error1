@@ -1,0 +1,28 @@
+Started by user ahmedshalapy
+
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/jenkins-task1
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/jenkins-task1/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ahmedshalapy805/node-calc.git # timeout=10
+Fetching upstream changes from https://github.com/ahmedshalapy805/node-calc.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/ahmedshalapy805/node-calc.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision ed634d141d8df505e9ba3a4b6888ac7cd86a6e77 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ed634d141d8df505e9ba3a4b6888ac7cd86a6e77 # timeout=10
+Commit message: "Create Jenkinsfile"
+First time build. Skipping changelog.
+[jenkins-task1] $ /bin/sh -xe /tmp/jenkins11930813788114984708.sh
++ docker build -t simple-node-cacl .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.45/build?buildargs=%7B%7D&cachefrom=%5B%5D&cgroupparent=&cpuperiod=0&cpuquota=0&cpusetcpus=&cpusetmems=&cpushares=0&dockerfile=Dockerfile&labels=%7B%7D&memory=0&memswap=0&networkmode=default&rm=1&shmsize=0&t=simple-node-cacl&target=&ulimits=%5B%5D&version=1": dial unix /var/run/docker.sock: connect: permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
